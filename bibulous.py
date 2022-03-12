@@ -1143,7 +1143,7 @@ class Bibdata(object):
             ## the BBL file.
             self.create_citation_list()
 
-            if ('<citealnum' in self.specials['citelabel']):
+            if ('<citealnum>' in self.specials['citelabel']):
                 alphanums = create_alphanum_citelabels(c, self.bibdata, self.citelist)
                 for c in self.citelist:
                     res = self.specials['citelabel'].replace('<citealnum>',alphanums[c])
